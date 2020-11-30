@@ -1,0 +1,28 @@
+.add-post{
+    margin: 20px 10px;
+    textarea, input{
+        width: 100%;
+        margin-bottom: 15px;
+        &:focus{
+            outline: none;
+        };
+        padding: 5px 10px;
+    };
+    input[type="text"]{
+        border: 3px solid #ff7a7a;
+        height: 40px;
+    };
+    textarea{
+        border: 3px solid #696363;
+        height: 60px;
+    };
+    input[type="button"]{
+        background: #ff7a7a;
+        color: white;
+        width: auto;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

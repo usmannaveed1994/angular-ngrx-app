@@ -1,0 +1,12 @@
+<h1>My Posts</h1>
+<div class="posts">
+    <p *ngIf="!(posts$ | async)?.length">No posts to show...</p>
+    <ul>
+        <li *ngFor="let post of posts$ | async; let i = index">
+        <p>{{post.title}}</p>
+        <p>{{post.body}}</p>
+        <span><app-delete-post [index]="i"></app-delete-post></span>
+        <hr>
+        </li> 
+    </ul>
+</div>

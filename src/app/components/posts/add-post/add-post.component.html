@@ -1,0 +1,14 @@
+<h1>Create A Post</h1>
+<div class="add-post">
+    <form>
+        <div>
+            <input type="text" placeholder="Title" name="Title" [(ngModel)]="post.title" />
+        </div>
+        <div>
+            <textarea placeholder="Description" name="Description" [(ngModel)]="post.body"></textarea> 
+        </div>
+        <div>
+            <input type="button" value="Post" (click)="createPost()">
+        </div>
+    </form>
+</div>
